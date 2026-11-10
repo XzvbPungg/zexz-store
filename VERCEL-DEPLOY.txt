@@ -1,0 +1,18 @@
+ZENZX JOKI ELITE - DEPLOY VERCEL (TAMPILAN ASLI DIPERTAHANKAN)
+
+1. Upload folder project ini ke GitHub atau import ZIP ke Vercel.
+2. Di Vercel, buka project > Storage > Create Database > Blob.
+3. Pilih PRIVATE dan hubungkan Blob store ke project ini. Pastikan environment variable BLOB_READ_WRITE_TOKEN tersedia (Vercel biasanya menambahkannya otomatis saat store dihubungkan).
+4. Deploy / Redeploy project.
+5. Buka URL deployment. Semua route website dan /api/* ditangani oleh Vercel Function.
+
+LOGIN ADMIN AWAL
+Username: admin
+Password: admin@2026
+Segera ubah password dari panel admin setelah login.
+
+CATATAN
+- public/index.html tidak diubah sama sekali.
+- Tidak ada VPS atau server eksternal.
+- Database pesanan, akun admin, harga, pengaturan, dan gateway disimpan di Vercel Blob PRIVATE.
+- Jika Blob belum dibuat/dihubungkan, API akan gagal dan data tidak akan tersimpan. Jangan gunakan penyimpanan filesystem Vercel untuk database permanen.
